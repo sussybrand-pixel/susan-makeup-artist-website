@@ -59,7 +59,7 @@ export default function Navigation() {
               key={link.href}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className={linkClasses(link.href)}
+              className={`${linkClasses(link.href)} block w-full text-left py-2`}
             >
               {link.label}
             </Link>
@@ -67,7 +67,7 @@ export default function Navigation() {
           <Link
             href="/contact"
             onClick={() => setIsOpen(false)}
-            className="block rounded bg-[#C9A24D] px-6 py-3 text-center text-sm font-semibold text-[#0E0E0E] transition-colors hover:bg-[#E6D1C3]"
+            className="block w-full rounded bg-[#C9A24D] px-6 py-3 text-center text-sm font-semibold text-[#0E0E0E] transition-colors hover:bg-[#E6D1C3]"
           >
             Book Now
           </Link>
