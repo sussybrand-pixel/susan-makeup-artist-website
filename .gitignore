@@ -2,6 +2,8 @@
 node_modules/
 src_unpacked/
 *.zip
+"Emmaville Website dashboard"/
+"website dashboard template"/
 
 # Build output
 .next/
@@ -26,5 +28,4 @@ pnpm-debug.log*
 .vscode/
 
 # Generated
-package-lock.json
 .turbo/
