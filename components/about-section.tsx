@@ -12,17 +12,17 @@ export default function AboutSection() {
         </div>
 
         <div>
-          <p className="section-eyebrow mb-4 text-sm">About BeautyHomeBySuzain</p>
-          <h2 className="font-display text-4xl text-[#E6D1C3] md:text-5xl">Susan Eworo (Suzain)</h2>
+          <p className="section-eyebrow mb-4 text-sm text-[#b1781d]">About BeautyHomeBySuzain</p>
+          <h2 className="font-display text-4xl text-[#b1781d] md:text-5xl">Susan Eworo (Suzain)</h2>
           <div className="my-6 h-1 w-20 bg-[#C9A24D]" />
 
-          <p className="mb-6 leading-relaxed text-[#E6D1C3]/90">
+          <p className="mb-6 leading-relaxed text-[#4a3320]">
             BeautyHomeBySuzain is a luxury makeup brand led by Susan Eworo, a celebrity and bridal makeup artist
             delivering flawless glam for weddings, birthdays, photoshoots, and special occasions across the UK and
             Nigeria.
           </p>
 
-          <p className="mb-8 leading-relaxed text-[#E6D1C3]/90">
+          <p className="mb-8 leading-relaxed text-[#4a3320]">
             With expertise in bridal transformations and high-end glam, Suzain creates stunning looks that celebrate
             confidence, beauty, and your most memorable moments.
           </p>

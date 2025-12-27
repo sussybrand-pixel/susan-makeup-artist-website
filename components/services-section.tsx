@@ -37,7 +37,7 @@ export default function ServicesSection() {
     <section className="bg-gradient-to-b from-[#fffaf2] via-[#f5ecdc] to-[#f3e8d9] px-4 py-20">
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 text-center">
-          <p className="section-eyebrow mb-4 text-sm">What We Offer</p>
+          <p className="section-eyebrow mb-4 text-sm text-[#b1781d]">What We Offer</p>
           <h2 className="font-display text-4xl text-[#2c1a0a] md:text-6xl">Luxury Makeup Services</h2>
           <div className="mx-auto mt-4 h-1 w-24 bg-[#C9A24D]" />
         </div>
