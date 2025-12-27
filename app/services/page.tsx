@@ -54,7 +54,8 @@ export default function ServicesPage() {
         <ImageWithFallback
           src="/assets/IMG-20251227-WA0030.jpg"
           alt="Makeup Services"
-          className="absolute inset-0 h-full w-full object-cover object-top"
+          className="absolute inset-0 h-full w-full object-cover"
+          style={{ objectPosition: "center 20%" }}
         />
         <div className="relative z-20 text-center">
           <motion.h1
