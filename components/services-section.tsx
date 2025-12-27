@@ -13,8 +13,8 @@ const services = [
     icon: Sparkles,
     title: "Birthday Glam",
     description:
-      "Celebrate in style with birthday glam packages that cover makeup, hair, and photoshoot-ready finishes.",
-    highlights: ["Makeup & hair", "Birthday photoshoot", "Edited photos"],
+      "Celebrate in style with birthday glam packages that cover makeup and photoshoot-ready finishes.",
+    highlights: ["Signature glam", "Birthday photoshoot", "Edited photos"],
   },
   {
     icon: Camera,

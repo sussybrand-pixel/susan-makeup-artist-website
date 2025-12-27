@@ -34,20 +34,20 @@ const packages: Package[] = [
     badge: "30% OFF EMBER DISCOUNT",
     badgeColor: "bg-red-600",
     price: "GBP 350.99",
-    originalPrice: "(Hair installation available at extra cost)",
+    originalPrice: "Includes premium skin prep and consultation",
     currency: "GBP",
     description:
       "The ultimate all-in-one bridal experience designed to make you look and feel flawless on your wedding day.",
     features: [
       "Bridal trial session tailored to your look and theme",
-      "Hair installation available",
+      "Premium skin prep and finish",
       "3-4 hour full glam session",
       "Professional touch-ups throughout the day",
       "Two edited videos ideal for reels or wedding memories",
     ],
     specialOffer: "Enjoy 30% off for a limited time only.",
-    availability: "Available across London and surrounding areas",
-    note: "Prices depend on location and time of booking (travel or early-call fees may apply).",
+    availability: "London · Manchester · Birmingham · Leeds · Sheffield · Bradford",
+    note: "Available across listed cities; travel worldwide by request (fees may apply).",
     cta: "Book Your Bridal Glam",
     featured: true,
   },
@@ -61,19 +61,19 @@ const packages: Package[] = [
     description: "Celebrate your special day with a luxury beauty and photography experience.",
     features: [
       "Flawless makeup application",
-      "Professional hair installation",
+      "Premium skin prep and lash styling",
       "Birthday photoshoot included",
       "Booking fee: NGN 15,000 (non-refundable)",
       "Quick delivery timeline",
     ],
     breakdown: [
       "Full glam makeup session",
-      "Professional hair styling",
+      "Pose direction and set styling",
       "Birthday cake photoshoot setup",
       "Professional photographer",
       "High-quality edited photos",
     ],
-    availability: "Lagos, Nigeria",
+    availability: "London · Manchester · Birmingham · Leeds · Sheffield · Bradford",
     cta: "Book Birthday Package",
     featured: false,
   },
@@ -88,17 +88,17 @@ const packages: Package[] = [
     features: [
       "30-second reel included",
       "1-2 outfit changes for variety",
-      "High-quality phone pictures edited for social",
+      "High-quality photos edited for social",
     ],
     deliverables: [
       "Five professionally edited photos",
       "One unedited (modified) picture",
       "30-second cinematic reel",
     ],
-    location: "Ozone Cinema, Sabo Yaba, Lagos",
+    location: "Client-selected venue or partnered studios in the UK",
     delivery: "4-5 day delivery",
     bookingFee: "Booking fee: NGN 15,000 (covers one person only)",
-    availability: "Lagos, Nigeria",
+    availability: "London · Manchester · Birmingham · Leeds · Sheffield · Bradford",
     cta: "Book Birthday Shoot",
     featured: false,
   },
@@ -218,7 +218,7 @@ export default function PackagesPage() {
 
                     <div className="flex flex-col gap-4 sm:flex-row">
                       <a
-                        href="https://wa.me/2347068305925"
+                        href="https://wa.me/447523992614"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex flex-1 items-center justify-center gap-2 rounded bg-[#C9A24D] px-6 py-4 text-center text-sm font-semibold uppercase tracking-wider text-[#0E0E0E] transition-colors hover:bg-[#E6D1C3]"
@@ -285,12 +285,12 @@ export default function PackagesPage() {
           <p className="mt-4 text-white/60">Contact us on WhatsApp or Instagram to secure your appointment.</p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="https://wa.me/2347068305925"
+              href="https://wa.me/447523992614"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded bg-[#C9A24D] px-8 py-4 text-sm font-semibold uppercase tracking-wider text-[#0E0E0E] transition-colors hover:bg-[#E6D1C3]"
             >
-              WhatsApp: +234 706 830 5925
+              WhatsApp: +44 7523 992614
             </a>
             <a
               href="https://instagram.com/beautyhomebysuzain"

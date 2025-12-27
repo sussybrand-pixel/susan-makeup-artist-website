@@ -50,22 +50,26 @@ export default function Footer() {
           <ul className="space-y-3 text-[#E6D1C3]">
             <li className="flex items-center space-x-2">
               <MapPin size={18} className="text-[#C9A24D]" />
-              <span>Leeds & Bradford, UK</span>
+              <span>London · Manchester · Birmingham</span>
             </li>
             <li className="flex items-center space-x-2">
               <MapPin size={18} className="text-[#C9A24D]" />
-              <span>Lagos, Nigeria</span>
+              <span>Leeds · Sheffield · Bradford</span>
+            </li>
+            <li className="flex items-center space-x-2">
+              <MapPin size={18} className="text-[#C9A24D]" />
+              <span>Available to travel to any country</span>
             </li>
             <li className="flex items-center space-x-2">
               <Phone size={18} className="text-[#C9A24D]" />
-              <a href="tel:+2347068305925" className="transition-colors hover:text-[#C9A24D]">
-                +234 706 830 5925
+              <a href="tel:+447523992614" className="transition-colors hover:text-[#C9A24D]">
+                +44 7523 992614
               </a>
             </li>
             <li className="flex items-center space-x-2">
               <MessageCircle size={18} className="text-[#C9A24D]" />
               <a
-                href="https://wa.me/2347068305925"
+                href="https://wa.me/447523992614"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-colors hover:text-[#C9A24D]"

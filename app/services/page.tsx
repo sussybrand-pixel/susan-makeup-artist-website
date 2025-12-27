@@ -18,8 +18,8 @@ const makeupServices = [
     icon: <Sparkles size={40} />,
     title: "Birthday Glam",
     description:
-      "Celebrate your special day in style with a complete glam transformation. Professional makeup and hair styling for birthday photoshoots and celebrations.",
-    features: ["Full glam makeup", "Professional hair installation", "Photoshoot ready", "Birthday shoot package available"],
+      "Celebrate your special day in style with a complete glam transformation. Professional makeup artistry for birthday photoshoots and celebrations.",
+    features: ["Full glam makeup", "Premium skin prep", "Photoshoot ready", "Birthday shoot package available"],
     image: "/assets/IMG-20251227-WA0034.jpg",
   },
   {
@@ -41,8 +41,8 @@ const makeupServices = [
 ]
 
 const addOns = [
-  { icon: <Plus size={24} />, name: "Hair Installation", description: "Professional hair styling and installation to complete your look." },
-  { icon: <Plus size={24} />, name: "Lash Application", description: "Premium lash application for added drama and glamour." },
+  { icon: <Plus size={24} />, name: "Skin Prep Upgrade", description: "Hydrating, camera-ready prep tailored to your skin." },
+  { icon: <Plus size={24} />, name: "Lash Styling", description: "Premium lash styling for added drama and glamour." },
   { icon: <Plus size={24} />, name: "Touch-Up Service", description: "On-site touch-ups to keep you looking flawless all day." },
 ]
 
@@ -168,7 +168,8 @@ export default function ServicesPage() {
             <div className="mx-auto my-6 h-1 w-24 bg-[#C9A24D]" />
             <p className="mx-auto mb-8 max-w-3xl text-center text-lg leading-relaxed text-white/70">
               Hands-on training for aspiring artists looking to refine their skills, learn professional techniques, and
-              build confidence in real-world glam applications.
+              build confidence in real-world glam applications. We offer online classes for beginners, one-on-one upgrade
+              sessions, and both online and physical course options.
             </p>
 
             <div className="grid gap-6 md:grid-cols-2">
@@ -190,6 +191,10 @@ export default function ServicesPage() {
                   <li className="flex items-start">
                     <span className="mr-2 text-[#C9A24D]">&bull;</span>
                     <span>Building your makeup business</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-[#C9A24D]">&bull;</span>
+                    <span>Online classes for beginners and skill upgrades</span>
                   </li>
                 </ul>
               </div>
@@ -213,6 +218,10 @@ export default function ServicesPage() {
                     <span className="mr-2 text-[#C9A24D]">&bull;</span>
                     <span>Flexible scheduling available</span>
                   </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-[#C9A24D]">&bull;</span>
+                    <span>Online and in-person course delivery</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -235,12 +244,12 @@ export default function ServicesPage() {
           <p className="mt-4 text-white/60">Limited slots available. Contact us today to secure your date.</p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="https://wa.me/2347068305925"
+              href="https://wa.me/447523992614"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded bg-[#C9A24D] px-8 py-4 text-sm font-semibold uppercase tracking-wider text-[#0E0E0E] transition-colors hover:bg-[#E6D1C3]"
             >
-              WhatsApp Booking
+              WhatsApp: +44 7523 992614
             </a>
             <Link
               href="/contact"

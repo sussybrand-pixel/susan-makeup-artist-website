@@ -4,6 +4,11 @@ src_unpacked/
 *.zip
 Emmaville\ Website\ dashboard/
 website\ dashboard\ template/
+assets/media_*/
+assets/media_*
+assets/download_*.ps1
+assets/download_*.csv
+assets/urls.txt
 
 # Build output
 .next/

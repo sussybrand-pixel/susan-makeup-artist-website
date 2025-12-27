@@ -31,7 +31,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-5xl">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <motion.a
-              href="https://wa.me/2347068305925"
+              href="https://wa.me/447523992614"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}
@@ -47,7 +47,7 @@ export default function ContactPage() {
                 <div className="flex-1">
                   <h3 className="text-xl uppercase tracking-wider">WhatsApp Booking</h3>
                   <p className="mt-2 text-white/60">Book directly via WhatsApp for instant confirmation.</p>
-                  <p className="mt-3 text-lg text-[#C9A24D]">+234 706 830 5925</p>
+                  <p className="mt-3 text-lg text-[#C9A24D]">+44 7523 992614</p>
                   <p className="mt-2 text-sm text-white/40">Tap to chat now.</p>
                 </div>
               </div>
@@ -85,9 +85,13 @@ export default function ContactPage() {
                 <div>
                   <h4 className="text-lg uppercase tracking-wider">Locations</h4>
                   <div className="mt-3 space-y-2 text-white/70">
-                    <p>Leeds & Bradford, UK</p>
-                    <p>Lagos, Nigeria</p>
-                    <p className="mt-3 text-[#C9A24D]">Travel available.</p>
+                    <p>London</p>
+                    <p>Manchester</p>
+                    <p>Birmingham</p>
+                    <p>Leeds</p>
+                    <p>Sheffield</p>
+                    <p>Bradford</p>
+                    <p className="mt-3 text-[#C9A24D]">Available to travel to any country.</p>
                   </div>
                 </div>
               </div>
@@ -169,13 +173,13 @@ export default function ContactPage() {
             <p className="text-white/60">Have questions? Need more information about our services?</p>
             <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
-                href="https://wa.me/2347068305925"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded bg-[#C9A24D] px-8 py-4 text-sm font-semibold uppercase tracking-wider text-[#0E0E0E] transition-colors hover:bg-[#E6D1C3]"
-              >
-                Send WhatsApp Message
-              </a>
+              href="https://wa.me/447523992614"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded bg-[#C9A24D] px-8 py-4 text-sm font-semibold uppercase tracking-wider text-[#0E0E0E] transition-colors hover:bg-[#E6D1C3]"
+            >
+              WhatsApp: +44 7523 992614
+            </a>
               <a
                 href="https://instagram.com/beautyhomebysuzain"
                 target="_blank"
@@ -197,16 +201,17 @@ export default function ContactPage() {
             <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
               <div>
                 <h4 className="text-xl text-white">United Kingdom</h4>
-                <p className="text-white/60">Leeds & Bradford</p>
-                <p className="mt-2 text-sm text-white/50">Full service area coverage.</p>
+                <p className="text-white/60">London · Manchester · Birmingham</p>
+                <p className="text-white/60">Leeds · Sheffield · Bradford</p>
+                <p className="mt-2 text-sm text-white/50">Full coverage across these cities.</p>
               </div>
               <div>
-                <h4 className="text-xl text-white">Nigeria</h4>
-                <p className="text-white/60">Lagos</p>
-                <p className="mt-2 text-sm text-white/50">City-wide availability.</p>
+                <h4 className="text-xl text-white">Worldwide Travel</h4>
+                <p className="text-white/60">Available to travel to any country.</p>
+                <p className="mt-2 text-sm text-white/50">Get in touch for bespoke bookings.</p>
               </div>
             </div>
-            <p className="mt-8 text-[#C9A24D]">Travel available to other locations with additional fees.</p>
+            <p className="mt-8 text-[#C9A24D]">Travel available to any location globally.</p>
           </div>
         </div>
       </section>

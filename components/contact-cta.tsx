@@ -11,13 +11,13 @@ export default function ContactCta() {
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="https://wa.me/2347068305925"
+            href="https://wa.me/447523992614"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded bg-[#C9A24D] px-8 py-4 text-sm font-semibold uppercase tracking-wider text-[#0E0E0E] transition-colors hover:bg-[#E6D1C3]"
           >
             <Phone size={18} />
-            WhatsApp Booking
+            WhatsApp: +44 7523 992614
           </a>
           <Link
             href="/contact"

@@ -18,34 +18,40 @@ export default function AboutSection() {
 
           <p className="mb-6 leading-relaxed text-[#4a3320]">
             BeautyHomeBySuzain is a luxury makeup brand led by Susan Eworo, a celebrity and bridal makeup artist
-            delivering flawless glam for weddings, birthdays, photoshoots, and special occasions across the UK and
-            Nigeria.
+            delivering flawless glam for weddings, birthdays, photoshoots, and special occasions across London,
+            Manchester, Birmingham, Leeds, Sheffield, and Bradford.
           </p>
 
-          <p className="mb-8 leading-relaxed text-[#4a3320]">
+          <p className="mb-4 leading-relaxed text-[#4a3320]">
             With expertise in bridal transformations and high-end glam, Suzain creates stunning looks that celebrate
-            confidence, beauty, and your most memorable moments.
+            confidence, beauty, and your most memorable moments. She also teaches online classes for beginners, offers
+            one-on-one upgrade sessions, and sells courses both online and in-person.
           </p>
 
-          <div className="mb-8 grid grid-cols-2 gap-6">
+          <div className="mb-6 grid grid-cols-2 gap-6">
             <div className="border-l-2 border-[#C9A24D] pl-4">
-              <h4 className="text-2xl text-[#C9A24D]">UK</h4>
-              <p className="text-sm text-[#E6D1C3]/70">Leeds & Bradford</p>
+              <h4 className="text-2xl text-[#C9A24D]">UK Cities</h4>
+              <p className="text-sm text-[#8c6235]">London · Manchester · Birmingham</p>
+              <p className="text-sm text-[#8c6235]">Leeds · Sheffield · Bradford</p>
             </div>
             <div className="border-l-2 border-[#C9A24D] pl-4">
-              <h4 className="text-2xl text-[#C9A24D]">Nigeria</h4>
-              <p className="text-sm text-[#E6D1C3]/70">Lagos</p>
+              <h4 className="text-2xl text-[#C9A24D]">Training & Courses</h4>
+              <ul className="space-y-2 text-sm text-[#4a3320]">
+                <li>Online classes for beginners</li>
+                <li>One-on-one training and upgrade classes</li>
+                <li>Courses available online and physical</li>
+              </ul>
             </div>
           </div>
 
-          <div className="flex items-center gap-4 text-[#E6D1C3]/80">
+          <div className="flex flex-wrap items-center gap-4 text-[#E6D1C3]/80">
             <div className="flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-[#C9A24D]" />
-              <span className="text-sm">Travel Available</span>
+              <span className="text-sm">Available to travel to any country</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-[#C9A24D]" />
-              <span className="text-sm">Limited Slots</span>
+              <span className="text-sm">Limited slots</span>
             </div>
           </div>
         </div>

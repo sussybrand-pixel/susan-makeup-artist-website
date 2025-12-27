@@ -8,7 +8,7 @@ const heroImages = [
   {
     url: "/assets/IMG-20251227-WA0030.jpg",
     title: "Luxury Bridal & Glam Makeup Artist",
-    subtitle: "UK & Nigeria | Travel Available",
+    subtitle: "London · Manchester · Birmingham · Leeds · Sheffield · Bradford | Available to travel worldwide",
   },
   {
     url: "/assets/IMG-20251227-WA0032.jpg",

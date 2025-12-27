@@ -10,12 +10,12 @@ const packages = [
     features: [
       "Bridal trial session tailored to your style and theme",
       "3-4 hour full glam session on your wedding day",
-      "Hair installation (available at an extra cost)",
+      "Premium skin prep and finish",
       "Professional reels with smooth transitions",
       "Two edited videos perfect for reels or wedding memories",
       "Travel available by request",
     ],
-    note: "Available across London and surrounding areas. Pricing may vary depending on location and time of booking (travel or early-slot fees may apply).",
+    note: "Serving London, Manchester, Birmingham, Leeds, Sheffield, and Bradford. Travel worldwide on request (fees may apply).",
     highlight: true,
   },
   {
@@ -23,7 +23,7 @@ const packages = [
     price: "NGN 65,000",
     features: [
       "Flawless makeup application",
-      "Professional hair installation",
+      "Premium skin prep and lash styling",
       "Exclusive birthday photoshoot",
       "High-quality edited photos",
       "Non-refundable booking fee: NGN 15,000",
@@ -38,10 +38,10 @@ const packages = [
     features: [
       "30-second reel-ready makeup photography session",
       "Up to three outfit changes",
-      "Five high-quality phone pictures",
+      "Five high-quality photos",
       "1-3 flawless makeup looks to match your style",
       "Expert photography session",
-      "Location: Ozone Cinema, Sabo Yaba, Lagos",
+      "Available at partnered studios or client venues",
     ],
     deliverables: [
       "Five professionally edited photos",
