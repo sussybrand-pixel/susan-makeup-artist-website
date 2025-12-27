@@ -3,24 +3,24 @@
 @tailwind utilities;
 
 :root {
-  --background: #0e0e0e;
-  --foreground: #f6f1e9;
-  --card: #0e0e0e;
-  --card-foreground: #f6f1e9;
-  --popover: #0e0e0e;
-  --popover-foreground: #f6f1e9;
+  --background: #fdfbf6;
+  --foreground: #2c1a0a;
+  --card: #fffaf2;
+  --card-foreground: #2c1a0a;
+  --popover: #fffaf2;
+  --popover-foreground: #2c1a0a;
   --primary: #c9a24d;
-  --primary-foreground: #0e0e0e;
-  --secondary: #e6d1c3;
-  --secondary-foreground: #0e0e0e;
-  --muted: #1a1410;
-  --muted-foreground: #c5b6a8;
+  --primary-foreground: #1c1208;
+  --secondary: #f3e8d9;
+  --secondary-foreground: #2c1a0a;
+  --muted: #f3e8d9;
+  --muted-foreground: #5b452f;
   --accent: #c9a24d;
-  --accent-foreground: #0e0e0e;
+  --accent-foreground: #1c1208;
   --destructive: #d4183d;
   --destructive-foreground: #ffffff;
-  --border: rgba(201, 162, 77, 0.25);
-  --input: #1a1410;
+  --border: rgba(201, 162, 77, 0.3);
+  --input: #f3e8d9;
   --ring: #c9a24d;
   --radius: 10px;
 }
@@ -51,3 +51,17 @@ a {
   text-transform: uppercase;
   color: #c9a24d;
 }
+
+/* Gold & white overrides for legacy dark utilities */
+.bg-\[\#0E0E0E\] { background-color: #fffaf2 !important; }
+.bg-\[\#1a1410\] { background-color: #f5ecdc !important; }
+.bg-gradient-to-b.from-\[\#0E0E0E\].to-\[\#1a1410\],
+.bg-gradient-to-b.from-\[\#1a1410\].to-\[\#0E0E0E\] {
+  background: linear-gradient(180deg, #fffaf2 0%, #f3e8d9 100%) !important;
+}
+.text-white { color: #2c1a0a !important; }
+.text-white\/80 { color: rgba(44, 26, 10, 0.85) !important; }
+.text-white\/70 { color: rgba(44, 26, 10, 0.7) !important; }
+.text-white\/60 { color: rgba(44, 26, 10, 0.6) !important; }
+.text-white\/50 { color: rgba(44, 26, 10, 0.5) !important; }
+.text-white\/40 { color: rgba(44, 26, 10, 0.4) !important; }

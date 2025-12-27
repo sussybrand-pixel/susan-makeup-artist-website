@@ -45,29 +45,29 @@ export default function Hero() {
             index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
         >
-          <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+          <div className="absolute inset-0 z-10 bg-gradient-to-b from-white/80 via-[#f3e8d9]/75 to-[#f9f2e4]/85" />
           <img src={image.url} alt={image.title} className="h-full w-full object-cover" />
         </div>
       ))}
 
       <div className="relative z-20 flex h-full items-center justify-center">
         <div className="mx-auto max-w-4xl px-4 text-center">
-          <h1 className="text-5xl font-display tracking-wide text-[#C9A24D] sm:text-6xl md:text-7xl">
+          <h1 className="text-5xl font-display tracking-wide text-[#c08b2f] sm:text-6xl md:text-7xl">
             {heroImages[currentSlide].title}
           </h1>
-          <p className="mt-4 text-xl uppercase tracking-wider text-[#E6D1C3] sm:text-2xl">
+          <p className="mt-4 text-xl uppercase tracking-wider text-[#5a4632] sm:text-2xl">
             {heroImages[currentSlide].subtitle}
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href="/contact"
-              className="rounded bg-[#C9A24D] px-8 py-4 text-sm font-semibold uppercase tracking-wider text-[#0E0E0E] transition-transform hover:scale-105 hover:bg-[#E6D1C3]"
+              className="rounded bg-[#C9A24D] px-8 py-4 text-sm font-semibold uppercase tracking-wider text-[#1c1208] transition-transform hover:scale-105 hover:bg-[#e8d6b5]"
             >
               Book Appointment
             </Link>
             <Link
               href="/packages"
-              className="rounded border-2 border-[#C9A24D] px-8 py-4 text-sm font-semibold uppercase tracking-wider text-[#C9A24D] transition-transform hover:scale-105 hover:bg-[#C9A24D] hover:text-[#0E0E0E]"
+              className="rounded border-2 border-[#C9A24D] px-8 py-4 text-sm font-semibold uppercase tracking-wider text-[#c08b2f] transition-transform hover:scale-105 hover:bg-[#C9A24D] hover:text-[#1c1208]"
             >
               View Packages
             </Link>
@@ -78,14 +78,14 @@ export default function Hero() {
       <button
         onClick={prevSlide}
         aria-label="Previous slide"
-        className="absolute left-4 top-1/2 z-30 -translate-y-1/2 rounded-full bg-[#C9A24D]/20 p-3 text-white transition-colors hover:bg-[#C9A24D]/40"
+        className="absolute left-4 top-1/2 z-30 -translate-y-1/2 rounded-full bg-[#C9A24D]/20 p-3 text-[#1c1208] transition-colors hover:bg-[#C9A24D]/40"
       >
         <ChevronLeft size={32} />
       </button>
       <button
         onClick={nextSlide}
         aria-label="Next slide"
-        className="absolute right-4 top-1/2 z-30 -translate-y-1/2 rounded-full bg-[#C9A24D]/20 p-3 text-white transition-colors hover:bg-[#C9A24D]/40"
+        className="absolute right-4 top-1/2 z-30 -translate-y-1/2 rounded-full bg-[#C9A24D]/20 p-3 text-[#1c1208] transition-colors hover:bg-[#C9A24D]/40"
       >
         <ChevronRight size={32} />
       </button>

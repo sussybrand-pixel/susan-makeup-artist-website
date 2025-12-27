@@ -55,13 +55,13 @@ const packages = [
 
 export default function PackagesSection() {
   return (
-    <section className="bg-[#0E0E0E] px-4 py-20" id="packages">
+    <section className="bg-[#fffaf2] px-4 py-20" id="packages">
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 text-center">
           <p className="section-eyebrow mb-4 text-sm">Exclusive Packages</p>
-          <h2 className="font-display text-4xl text-[#E6D1C3] md:text-6xl">Glam Packages & Pricing</h2>
+          <h2 className="font-display text-4xl text-[#2c1a0a] md:text-6xl">Glam Packages & Pricing</h2>
           <div className="mx-auto mt-4 h-1 w-24 bg-[#C9A24D]" />
-          <p className="mx-auto mt-6 max-w-2xl text-[#E6D1C3]/80">
+          <p className="mx-auto mt-6 max-w-2xl text-[#5a4632]">
             Book your appointment today and experience the luxury of flawless glam.
           </p>
         </div>
@@ -70,28 +70,28 @@ export default function PackagesSection() {
           {packages.map((pkg) => (
             <div
               key={pkg.name}
-              className={`relative overflow-hidden rounded-lg bg-gradient-to-b from-[#1a1410] to-[#0E0E0E] ${
+              className={`relative overflow-hidden rounded-lg bg-gradient-to-b from-white to-[#f6ecdc] ${
                 pkg.highlight
-                  ? "border-2 border-[#C9A24D] shadow-2xl shadow-[#C9A24D]/20"
-                  : "border border-[#C9A24D]/20"
+                  ? "border-2 border-[#C9A24D] shadow-2xl shadow-[#C9A24D]/25"
+                  : "border border-[#C9A24D]/30"
               }`}
             >
               {pkg.badge && (
-                <div className="absolute right-0 top-0 bg-[#C9A24D] px-4 py-2 text-xs tracking-wider text-[#0E0E0E]">
+                <div className="absolute right-0 top-0 bg-[#C9A24D] px-4 py-2 text-xs tracking-wider text-[#1c1208]">
                   {pkg.badge}
                 </div>
               )}
 
               <div className="p-8">
                 <div className="mb-6">
-                  <h3 className="font-display text-2xl uppercase tracking-wide text-[#E6D1C3]">
+                  <h3 className="font-display text-2xl uppercase tracking-wide text-[#2c1a0a]">
                     {pkg.name}
                   </h3>
                   <div className="mt-3 flex items-baseline gap-2">
                     {pkg.originalPrice && (
-                      <span className="text-xl text-[#E6D1C3]/40 line-through">{pkg.originalPrice}</span>
+                      <span className="text-xl text-[#5a4632]/60 line-through">{pkg.originalPrice}</span>
                     )}
-                    <span className="text-4xl text-[#C9A24D]">{pkg.price}</span>
+                    <span className="text-4xl text-[#c08b2f]">{pkg.price}</span>
                   </div>
                 </div>
 
@@ -101,7 +101,7 @@ export default function PackagesSection() {
                   {pkg.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3">
                       <Check className="mt-0.5 flex-shrink-0 text-[#C9A24D]" size={18} />
-                      <span className="text-sm leading-relaxed text-[#E6D1C3]/80">{feature}</span>
+                      <span className="text-sm leading-relaxed text-[#5a4632]">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -110,13 +110,13 @@ export default function PackagesSection() {
                   <>
                     <div className="mb-4 flex items-center gap-2">
                       <Sparkles className="text-[#C9A24D]" size={18} />
-                      <h4 className="text-xs uppercase tracking-wider text-[#E6D1C3]">Deliverables</h4>
+                      <h4 className="text-xs uppercase tracking-wider text-[#2c1a0a]">Deliverables</h4>
                     </div>
                     <ul className="mb-8 space-y-3">
                       {pkg.deliverables.map((item) => (
                         <li key={item} className="flex items-start gap-3">
                           <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#C9A24D]" />
-                          <span className="text-sm leading-relaxed text-[#E6D1C3]/70">{item}</span>
+                          <span className="text-sm leading-relaxed text-[#5a4632]">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -124,15 +124,15 @@ export default function PackagesSection() {
                 )}
 
                 {pkg.note && (
-                  <p className="mb-6 text-xs italic leading-relaxed text-[#E6D1C3]/60">{pkg.note}</p>
+                  <p className="mb-6 text-xs italic leading-relaxed text-[#5a4632]/75">{pkg.note}</p>
                 )}
 
                 <Link
                   href="/contact"
                   className={`inline-flex w-full items-center justify-center rounded px-6 py-3 text-center text-sm font-semibold uppercase tracking-wider transition-transform hover:scale-105 ${
                     pkg.highlight
-                      ? "bg-[#C9A24D] text-[#0E0E0E] hover:bg-[#E6D1C3]"
-                      : "border-2 border-[#C9A24D] text-[#C9A24D] hover:bg-[#C9A24D] hover:text-[#0E0E0E]"
+                      ? "bg-[#C9A24D] text-[#1c1208] hover:bg-[#e8d6b5]"
+                      : "border-2 border-[#C9A24D] text-[#c08b2f] hover:bg-[#C9A24D] hover:text-[#1c1208]"
                   }`}
                 >
                   Book This Package
@@ -142,8 +142,8 @@ export default function PackagesSection() {
           ))}
         </div>
 
-        <div className="mt-12 rounded-lg border border-[#C9A24D]/30 bg-[#7A4A33]/20 p-6 text-center">
-          <p className="text-[#E6D1C3]/90">
+        <div className="mt-12 rounded-lg border border-[#C9A24D]/30 bg-[#f9f0de] p-6 text-center">
+          <p className="text-[#4a3320]">
             <span className="text-[#C9A24D]">Important:</span> Limited slots available. Booking fee required.{" "}
             <span className="text-[#C9A24D]">No refunds.</span> Travel fees may apply.
           </p>

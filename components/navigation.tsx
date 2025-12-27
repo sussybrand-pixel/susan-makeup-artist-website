@@ -23,9 +23,9 @@ export default function Navigation() {
     } hover:text-[#C9A24D]`
 
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 border-b border-[#C9A24D]/20 bg-[#0E0E0E]/95 backdrop-blur">
+    <nav className="fixed inset-x-0 top-0 z-50 border-b border-[#C9A24D]/30 bg-white/90 backdrop-blur">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="text-lg font-semibold tracking-wider text-[#C9A24D]">
+        <Link href="/" className="text-lg font-semibold tracking-wider text-[#c08b2f]">
           BeautyHomeBySuzain
         </Link>
 
@@ -37,14 +37,14 @@ export default function Navigation() {
           ))}
           <Link
             href="/contact"
-            className="rounded bg-[#C9A24D] px-6 py-2.5 text-sm font-semibold text-[#0E0E0E] transition-colors hover:bg-[#E6D1C3]"
+            className="rounded bg-[#C9A24D] px-6 py-2.5 text-sm font-semibold text-[#1c1208] transition-colors hover:bg-[#e8d6b5]"
           >
             Book Now
           </Link>
         </div>
 
         <button
-          className="md:hidden text-[#C9A24D]"
+          className="md:hidden text-[#c08b2f]"
           onClick={() => setIsOpen((open) => !open)}
           aria-label="Toggle menu"
         >
@@ -53,7 +53,7 @@ export default function Navigation() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden border-t border-[#C9A24D]/20 bg-[#0E0E0E] px-4 py-6 space-y-4">
+        <div className="md:hidden border-t border-[#C9A24D]/30 bg-white px-4 py-6 space-y-4 shadow-lg">
           {links.map((link) => (
             <Link
               key={link.href}
@@ -67,7 +67,7 @@ export default function Navigation() {
           <Link
             href="/contact"
             onClick={() => setIsOpen(false)}
-            className="block w-full rounded bg-[#C9A24D] px-6 py-3 text-center text-sm font-semibold text-[#0E0E0E] transition-colors hover:bg-[#E6D1C3]"
+            className="block w-full rounded bg-[#C9A24D] px-6 py-3 text-center text-sm font-semibold text-[#1c1208] transition-colors hover:bg-[#e8d6b5]"
           >
             Book Now
           </Link>
