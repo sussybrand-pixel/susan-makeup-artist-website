@@ -10,7 +10,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: "Stripe not configured" }, { status: 500 })
   }
 
-  const stripe = new Stripe(stripeSecret, { apiVersion: "2024-10-22" })
+  const stripe = new Stripe(stripeSecret, { apiVersion: "2025-12-15.clover" })
   const { searchParams } = new URL(request.url)
   const sessionId = searchParams.get("session_id")
   if (!sessionId) {
