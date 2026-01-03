@@ -1,9 +1,10 @@
 'use client'
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { motion } from "motion/react"
 import { X } from "lucide-react"
 import ImageWithFallback from "../../components/image-with-fallback"
+import { getSection, withSite } from "@/lib/api"
 
 type PortfolioItem = {
   id: number
@@ -299,8 +300,29 @@ const categories = [
 export default function CataloguePage() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
   const [filter, setFilter] = useState<string>("all")
+  const [items, setItems] = useState<PortfolioItem[]>(portfolioItems)
 
-  const filteredItems = filter === "all" ? portfolioItems : portfolioItems.filter((item) => item.category === filter)
+  useEffect(() => {
+    async function load() {
+      try {
+        const data = await getSection("portfolio")
+        const mapped = (data.items || []).map((it: any, idx: number) => ({
+          id: idx + 1,
+          media: withSite(it.media),
+          category: (it.category || "glam") as PortfolioItem["category"],
+          title: it.title || "Portfolio",
+          description: it.description || "",
+          alt: it.alt || it.title || "Portfolio image",
+        }))
+        if (mapped.length) setItems(mapped)
+      } catch {
+        /* keep defaults */
+      }
+    }
+    load()
+  }, [])
+
+  const filteredItems = filter === "all" ? items : items.filter((item) => item.category === filter)
   const isVideo = (path: string) => path.endsWith(".mp4")
   const categoryLabels: Record<PortfolioItem["category"], string> = {
     bridal: "Bridal",

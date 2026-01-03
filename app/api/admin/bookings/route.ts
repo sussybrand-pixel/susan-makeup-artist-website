@@ -22,12 +22,16 @@ export async function GET(request: NextRequest) {
   const status = new URL(request.url).searchParams.get("status")
 
   try {
+    const conn = process.env.POSTGRES_URL || process.env.POSTGRES_PRISMA_URL
+    if (!conn) {
+      return NextResponse.json({ bookings: [] })
+    }
     const bookings = status
       ? await sql`SELECT * FROM bookings WHERE status = ${status} ORDER BY created_at DESC LIMIT 200`
       : await sql`SELECT * FROM bookings ORDER BY created_at DESC LIMIT 200`
     return NextResponse.json({ bookings: bookings.rows })
   } catch (error) {
     console.error("Fetch bookings error", error)
-    return NextResponse.json({ error: "Failed to fetch bookings" }, { status: 500 })
+    return NextResponse.json({ bookings: [] })
   }
 }
