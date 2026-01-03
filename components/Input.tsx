@@ -30,7 +30,7 @@ export function Input({
           {label}
         </label>
       )}
-      <div className="flex items-center gap-2">
+      <div className="relative">
         <input
           id={id}
           type={type}
@@ -40,7 +40,11 @@ export function Input({
           required={required}
           className={`w-full px-4 py-2.5 bg-input-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all ${rightSlot ? 'pr-12' : ''} ${className}`}
         />
-        {rightSlot}
+        {rightSlot && (
+            <div className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground">
+                {rightSlot}
+            </div>
+        )}
       </div>
     </div>
   );

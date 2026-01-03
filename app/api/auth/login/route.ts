@@ -7,7 +7,7 @@ import { SITE_ORIGIN } from "@/lib/api";
 const fallbackSettings = {
   admin: {
     username: "susan",
-    // bcrypt hash for "password"
+    // bcrypt hash for "ChristisKing8"
     passwordHash: "$2a$10$jAqm0vQ9d3JongjNrqUgc.EL4Ntwaz0U0Olqo7AXlTCv9oughtdw2", 
   },
 };
