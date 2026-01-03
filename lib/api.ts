@@ -1,6 +1,7 @@
-// Point the dashboard to the local API
+// Point the dashboard to the site API (prefer explicit site URL)
 export const SITE_ORIGIN =
-  process.env.NEXT_PUBLIC_SITE_ORIGIN || 
+  process.env.NEXT_PUBLIC_SITE_ORIGIN ||
+  process.env.NEXT_PUBLIC_SITE_URL ||
   (typeof window !== "undefined" ? window.location.origin : "http://localhost:3000");
 
 export const BASE = `${SITE_ORIGIN}/api/content`;

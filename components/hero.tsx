@@ -4,8 +4,19 @@ import Link from "next/link"
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import { getSection, withSite } from "@/lib/api"
 
-const heroImages = [
+type Slide = {
+  url: string
+  title: string
+  subtitle: string
+  primaryLabel?: string
+  primaryHref?: string
+  secondaryLabel?: string
+  secondaryHref?: string
+}
+
+const defaultSlides: Slide[] = [
   {
     url: "/assets/IMG-20251227-WA0030.jpg",
     title: "Luxury Bridal & Glam Makeup Artist",
@@ -25,21 +36,40 @@ const heroImages = [
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0)
+  const [slides, setSlides] = useState<Slide[]>(defaultSlides)
 
   useEffect(() => {
+    ;(async () => {
+      try {
+        const home = await getSection("home")
+        const remoteSlides =
+          home?.hero?.slides?.map((s: any) => ({
+            url: withSite(s.image),
+            title: s.title,
+            subtitle: s.subtitle,
+            primaryLabel: s.primaryLabel,
+            primaryHref: s.primaryHref,
+            secondaryLabel: s.secondaryLabel,
+            secondaryHref: s.secondaryHref,
+          })) || []
+        if (remoteSlides.length) setSlides(remoteSlides)
+      } catch {
+        /* keep defaults */
+      }
+    })()
     const timer = setInterval(
-      () => setCurrentSlide((prev) => (prev + 1) % heroImages.length),
+      () => setCurrentSlide((prev) => (prev + 1) % slides.length),
       5000,
     )
     return () => clearInterval(timer)
-  }, [])
+  }, [slides.length])
 
-  const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % heroImages.length)
-  const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length)
+  const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % slides.length)
+  const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
 
   return (
     <section className="relative h-[90vh] w-full overflow-hidden bg-black">
-      {heroImages.map((image, index) => (
+      {slides.map((image, index) => (
         <div
           key={image.url}
           className={`absolute inset-0 transition-opacity duration-1000 ${
@@ -61,23 +91,23 @@ export default function Hero() {
       <div className="relative z-20 flex h-full items-center justify-center">
         <div className="mx-auto max-w-4xl px-4 text-center">
           <h1 className="text-5xl font-display tracking-wide text-[#d8b86a] sm:text-6xl md:text-7xl drop-shadow-[0_3px_20px_rgba(0,0,0,0.6)]">
-            {heroImages[currentSlide].title}
+            {slides[currentSlide]?.title}
           </h1>
           <p className="mt-4 text-xl uppercase tracking-wider text-[#fefaf4] sm:text-2xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)]">
-            {heroImages[currentSlide].subtitle}
+            {slides[currentSlide]?.subtitle}
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              href="/book"
+              href={slides[currentSlide]?.primaryHref || "/book"}
               className="rounded bg-[#C9A24D] px-8 py-4 text-sm font-semibold uppercase tracking-wider text-[#1c1208] transition-transform hover:scale-105 hover:bg-[#e8d6b5]"
             >
-              Book Appointment
+              {slides[currentSlide]?.primaryLabel || "Book Appointment"}
             </Link>
             <Link
-              href="/packages"
+              href={slides[currentSlide]?.secondaryHref || "/packages"}
               className="rounded border-2 border-[#C9A24D] px-8 py-4 text-sm font-semibold uppercase tracking-wider text-[#c08b2f] transition-transform hover:scale-105 hover:bg-[#C9A24D] hover:text-[#1c1208]"
             >
-              View Packages
+              {slides[currentSlide]?.secondaryLabel || "View Packages"}
             </Link>
           </div>
         </div>
@@ -99,7 +129,7 @@ export default function Hero() {
       </button>
 
       <div className="absolute bottom-8 left-1/2 z-30 -translate-x-1/2 flex gap-3">
-        {heroImages.map((_, index) => (
+        {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
