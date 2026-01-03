@@ -51,7 +51,7 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 5,
-    media: "/assets/gifs/VID-20251227-WA0045.gif",
+    media: "/assets/VID-20251227-WA0045.mp4",
     category: "bridal",
     title: "Bridal Glow Motion",
     description: "Looping bridal glam reel showcasing flawless finish.",
@@ -59,7 +59,7 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 6,
-    media: "/assets/gifs/VID-20251227-WA0037.gif",
+    media: "/assets/VID-20251227-WA0037.mp4",
     category: "bridal",
     title: "Trial Session Motion",
     description: "Behind-the-scenes bridal prep captured in motion.",
@@ -67,7 +67,7 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 7,
-    media: "/assets/gifs/VID-20251227-WA0043.gif",
+    media: "/assets/VID-20251227-WA0043.mp4",
     category: "bridal",
     title: "Bridal Details",
     description: "Close-up reel highlighting shimmer and lashes.",
@@ -109,7 +109,7 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 12,
-    media: "/assets/gifs/VID-20251227-WA0044.gif",
+    media: "/assets/VID-20251227-WA0044.mp4",
     category: "birthday",
     title: "Birthday Sparkle",
     description: "Looping reel of sparkling birthday glam.",
@@ -117,7 +117,7 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 13,
-    media: "/assets/gifs/VID-20251227-WA0046.gif",
+    media: "/assets/VID-20251227-WA0046.mp4",
     category: "birthday",
     title: "Birthday Reels",
     description: "Movement-focused reel for birthday transformation.",
@@ -223,7 +223,7 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 26,
-    media: "/assets/gifs/VID-20251227-WA0042.gif",
+    media: "/assets/VID-20251227-WA0042.mp4",
     category: "glam",
     title: "Glam Motion",
     description: "Looping motion reel of a glam shoot.",
@@ -281,7 +281,7 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 33,
-    media: "/assets/gifs/WhatsApp Video 2025-12-27.gif",
+    media: "/assets/WhatsApp Video 2025-12-27.mp4",
     category: "editorial",
     title: "Editorial Motion",
     description: "Looping editorial reel highlighting details.",
