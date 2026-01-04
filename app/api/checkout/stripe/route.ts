@@ -8,11 +8,11 @@ import { rateLimit } from "@/lib/rateLimit"
 
 const stripeSecret = process.env.STRIPE_SECRET_KEY
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://beautyhomebysuzain.com"
-const BLOB_BUCKET = process.env.BLOB_BUCKET || process.env.NEXT_PUBLIC_BLOB_BUCKET || "pqum76zhaodicrtp"
+const BLOB_BUCKET = process.env.BLOB_BUCKET || process.env.NEXT_PUBLIC_BLOB_BUCKET;
 const BLOB_BASE_URL =
   process.env.BLOB_BASE_URL ||
   process.env.NEXT_PUBLIC_BLOB_BASE_URL ||
-  `https://${BLOB_BUCKET}.public.blob.vercel-storage.com`
+  (BLOB_BUCKET ? `https://${BLOB_BUCKET}.public.blob.vercel-storage.com` : "");
 const BLOB_TOKEN =
   process.env.BLOB_READ_WRITE_TOKEN ||
   process.env.NEXT_PUBLIC_BLOB_READ_WRITE_TOKEN ||
