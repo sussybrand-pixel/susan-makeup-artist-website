@@ -74,7 +74,7 @@ export default function ServicesPage() {
 
   return (
     <div className="bg-[#fdf7ec] text-[#1c1208]">
-      <section className="relative flex h-[70vh] items-center justify-center overflow-hidden px-4">
+      <section className="relative flex items-center justify-center overflow-hidden px-4 h-[45vh] min-h-[300px] max-h-[420px] md:h-[40vh] md:min-h-[380px] md:max-h-[520px]">
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/5 via-black/40 to-black/90" />
         <ImageWithFallback
           src={heroImage}
