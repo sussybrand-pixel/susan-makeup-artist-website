@@ -164,6 +164,7 @@ export async function POST(request: NextRequest) {
         access: 'public',
         addRandomSuffix: false,
         token: BLOB_TOKEN,
+        allowOverwrite: true,
       })
     }
 

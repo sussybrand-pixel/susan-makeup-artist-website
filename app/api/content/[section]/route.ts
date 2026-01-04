@@ -242,6 +242,7 @@ export async function PUT(request: NextRequest, { params }: { params: { section:
       access: 'public',
       addRandomSuffix: false,
       token: BLOB_TOKEN,
+      allowOverwrite: true,
     })
     
     // Respond with what we stored

@@ -49,14 +49,14 @@ const addOns = [
 export default function ServicesPage() {
   return (
     <div className="bg-[#fdf7ec] text-[#1c1208]">
-      <section className="relative flex h-[50vh] items-center justify-center overflow-hidden px-4">
-        <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/15 via-black/55 to-black/80" />
+      <section className="relative flex h-[60vh] items-center justify-center overflow-hidden px-4">
+        <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/10 via-black/40 to-black/80" />
         <ImageWithFallback
-          src="/assets/IMG-20251227-WA0028.jpg"
+          src="/assets/IMG-20251227-WA0032.jpg"
           alt="Makeup Services"
           className="absolute inset-0 h-full w-full"
           imageClassName="object-cover"
-          imageStyle={{ objectPosition: "center 35%" }}
+          imageStyle={{ objectPosition: "center 45%" }}
         />
         <div className="relative z-20 text-center">
           <motion.h1
