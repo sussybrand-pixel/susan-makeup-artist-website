@@ -1,5 +1,5 @@
 const COOKIE_NAME = "susan_dashboard_session";
-const COOKIE_SECRET = "susan_dashboard_secret";
+const COOKIE_SECRET = process.env.JWT_SECRET || process.env.SESSION_SECRET || "susan_dashboard_secret";
 
 export { COOKIE_NAME, COOKIE_SECRET };
 
