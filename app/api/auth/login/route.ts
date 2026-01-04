@@ -2,7 +2,7 @@ import bcrypt from "bcryptjs";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 import { signSession, verifySession, COOKIE_NAME } from "@/lib/auth";
-import { SITE_ORIGIN } from "@/lib/api";
+import { getContent } from "@/lib/content";
 import { rateLimit } from "@/lib/rateLimit";
 
 const fallbackSettings = {
@@ -31,11 +31,8 @@ export async function POST(req: Request) {
   // Pull live admin credentials from website settings
   let admin: any = null;
   try {
-    const settingsRes = await fetch(`${SITE_ORIGIN}/api/content/settings`, { cache: "no-store" });
-    if (settingsRes.ok) {
-      const settings = await settingsRes.json();
-      admin = settings?.admin;
-    }
+    const settings = await getContent("settings");
+    admin = settings?.admin;
   } catch (err) {
     console.error("Settings fetch error", err);
   }

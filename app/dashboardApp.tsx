@@ -125,6 +125,8 @@ function SettingsForm() {
       next.admin = { ...(next.admin || {}), username };
       if (password && password.length >= 6) {
         next.admin = { ...next.admin, passwordHash: await bcrypt.hash(password, 10) };
+        // Remove old plaintext password to force hash usage
+        delete next.admin.password;
       }
       await updateSection('settings', next);
       setSuccess('Settings saved');
